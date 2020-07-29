@@ -33,7 +33,7 @@ const errorGetPrueba = () => {
     }
 }
 
-//Busqueda de todos los VIAJES
+//Busqueda de todos los Viajes
 const requestGetViajes = () => {
     return {
         type: GET_VIAJES_REQUEST
@@ -53,7 +53,7 @@ const errorGetViajes = () => {
     }
 }
 
-//Busqueda de todos los VIAJES
+//Registrar un Viaje
 const requestRegistrar = () => {
     return {
         type: GET_REGISTRAR_REQUEST
@@ -73,8 +73,7 @@ const errorRegistrar = () => {
     }
 }
 
-// -------------
-export const getAllPrueba = () => (dispatch)=> {
+export const getAllPrueba = () => (dispatch) => {
 
     dispatch(requestGetPrueba());
     let prueba = [];
@@ -91,7 +90,7 @@ export const getAllPrueba = () => (dispatch)=> {
         });
 };
 
-export const getAllViajes = () => (dispatch)=> {
+export const getAllViajes = () => (dispatch) => {
 
     dispatch(requestGetViajes());
 
@@ -110,21 +109,16 @@ export const getAllViajes = () => (dispatch)=> {
 };
 
 export const registrarViaje = (eventData) => (dispatch) => {
-    //Se establece el estado como 'Creando evento'
     dispatch(requestRegistrar());
-    // var databaseRef = db.ref("viaje/");
-  
-    // var key_viaje = databaseRef.push().key;
 
     console.log(eventData);
 
-  
     db.ref('viajes/').push(eventData)
-      .then(() => {
-        dispatch(receiveRegistrar(eventData)); //si hubo exito se establece el estado como exitoso
-        dispatch(errorGetViajes)
-      })
-      .catch(() => {
-        dispatch(errorRegistrar()); //si hubo exito se establece el estado como falla
-      });
-  };
+        .then(() => {
+            dispatch(receiveRegistrar(eventData));
+            dispatch(errorGetViajes)
+        })
+        .catch(() => {
+            dispatch(errorRegistrar());
+        });
+};

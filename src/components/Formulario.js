@@ -48,6 +48,7 @@ export const Transportes = props => {
             alert("Los datos son incorrectos");
         } else {
             dispatch(registrarViaje(new_data));
+            alert("Registraste tu Viaje");
         }
     }
 
@@ -149,7 +150,6 @@ export const Transportes = props => {
         }
     }, [])
 
-
     const classes = useStyles();
 
     return (
@@ -178,8 +178,7 @@ export const Transportes = props => {
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
                                 value={medio_transporte}
-                                onChange={handleChangeTransporte}
-                            >
+                                onChange={handleChangeTransporte}>
                                 <MenuItem value='auto'>Automovil</MenuItem>
                                 <MenuItem value='metro'>Metro</MenuItem>
                                 <MenuItem value='camioneta'>Camioneta</MenuItem>
@@ -194,7 +193,6 @@ export const Transportes = props => {
                         </FormControl>
 
                     </div>
-
 
                     <TextField className={classes.text_field} label="Cantidad de Kilometros" id="standard-start-adornment"
                         type='number'
