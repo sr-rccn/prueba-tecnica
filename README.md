@@ -1,3 +1,46 @@
+
+El proyecto fue construido en base a [Create React App](https://github.com/facebook/create-react-app).
+
+Para ejecutar el programa, dirigase a la carpeta del proyecto y ejecute:
+
+### `yarn start`
+
+## Dependencias Necesarias
+
+El proyecto esta desarrollado en una arquitectura React+Redux+FireBase
+Para el ejecutar este proyecto, previamente debemos tener instaladas las siguientes dependencias.
+Vía yarn o npm:
+
+	• create-react-app
+	• redux
+	• React-redux
+	• Redux-thunk
+    • firebase
+    • material-ui
+
+## Requerimientos cumplidos
+
+	• Creación de un formulario para registrar los viajes de los Trabajos
+	• Visualización de todos los viajes Agregados
+
+## Requerimientos no-cumplidos
+
+	• No se despliegan los nombres de los trabajadores en el detalle de los viajes
+	• Error al desplegar los viajes registrados despues de registrar un viaje en el formulario
+
+## Problemas, Razones y Soluciones
+
+	• Por temas de tiempo y prioridades, decidí simplificar el código para desplegar los detalles de los trabajadores.
+    • Ligeros problemas en la implementación y uso de MaterialUI, como manejar la 'Grilla', posiciones y propiedades desconocidas.
+	• Poca robusted en validaciones, por prioridades y el límite del tiempo
+    • Solucionaría y optimizaría el código de errores, al tener más tiempo para desarrollar una arquitectura más solida con Redux.
+
+## Gracias por tu atención
+
+	Muchas gracias por darle revisión al código, cualquier problema en la ejecución del código contactarme al correo: ing.sergio.rivas@hotmail.com.
+    Happy Hacking!!
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
