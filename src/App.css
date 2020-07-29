@@ -7,6 +7,13 @@
   pointer-events: none;
 }
 
+.c02-logo {
+  height: 40vmin;
+  pointer-events: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,14 +21,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #77e57e;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #20211e;
 }
 
 .App-link {
